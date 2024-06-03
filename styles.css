@@ -1,1 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background: violet;
+}
+
+section{
+    background: rgb(138, 148, 240);
+}
+
+article{
+    background: rgb(130, 238, 171);
+}
+
+aside{
+    background: rgb(30, 92, 236);
+}
+
+footer{
+    background: rgb(2, 46, 5);
+    color: aliceblue;
+}
+
+.py-1{
+    padding: 1rem;
+}
 
