@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.padding{ padding: 1rem; }
+
+.margin{ padding: 1rem; }
 
 header{
     background: violet;
