@@ -1,1 +1,581 @@
+/* Importação de fonte para o logo */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+:root {
+  --green: #009660;
+  --white: #fff;
+  --yellow-logo: #ffce00;
+  --cinza: #f2f2f2;
+  --cinza-card: #f4f9f6;
+  --cor-subBarAside: #b3cb0d;
+}
+.wrapper-max {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+header {
+  background: var(--green);
+}
+
+header a {
+  color: var(--white);
+  font-size: 14px;
+}
+
+header span.fontLarger {
+  font-weight: bold;
+}
+
+.fa-moon {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 2px 3px;
+  margin-right: 2px;
+}
+
+.fa-file-lines {
+  padding: 2px 3px;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.navbar a {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/**LOGO**/
+.c-logo {
+  margin: 2px;
+  gap: 2px;
+  display: flex;
+}
+
+/*Logo default - para todos */
+.logo {
+  width: 148px;
+  text-align: center;
+}
+
+/*logo - verde * selecionando o primeiro de tras pra frente*/
+.logo:nth-last-child(1) {
+  background: var(--green);
+  color: var(--white);
+  font-size: 29px;
+  line-height: 27px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 100;
+  border-radius: 3px 30px 3px 3px;
+}
+
+/*logo - yellow * selecionando o segundo de tras pra frente*/
+.logo:nth-last-child(2) {
+  background: var(--yellow-logo);
+  color: var(--green);
+  font-size: 29px;
+  line-height: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 100;
+  border-radius: 3px 3px 3px 30px;
+}
+
+.flex-navbar {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Área de busca */
+#search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  background-color: var(--green);
+  background-image: url('https://images.unsplash.com/photo-1566419808810-658178380987?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+}
+
+.searchLema {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.whatsSearch {
+  padding: 12px 0 20px 0;
+  font-size: 32px;
+}
+
+.c-input {
+  background: var(--white);
+  padding: 2px 6px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.flex {
+  display: flex;
+  align-items: flex-end;
+}
+.c-input .flex {
+  display: flex;
+  align-items: center;
+}
+
+.c-input input[type='text'] {
+  border: 0;
+  height: 35px;
+  outline: none;
+  font-size: 17px;
+  width: 400px;
+}
+
+.c-input input[type='submit'] {
+  border: 2px solid var(--green);
+  border-radius: 5px;
+  padding: 5px 24px;
+  background: var(--green);
+  color: var(--white);
+}
+.c-input .fa-solid {
+  color: var(--green);
+  margin-right: 5px;
+}
+
+.bg-services {
+  background: var(--green);
+  background-image: url('https://img.freepik.com/vetores-gratis/fundo-abstrato-verde-geometrico_23-2148380473.jpg?t=st=1716006340~exp=1716009940~hmac=6f7bfc37cb5c7918bc9a045046edc2eb8792c71de56639881cb9d1620a93ca43&w=900');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0.5rem;
+}
+
+/*container de cards de serviços*/
+.c-cards-services {
+  display: grid;
+  height: 200px;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/*cada um dos cards de services*/
+.card-service {
+  border: 2px solid var(--white);
+  background: var(--cinza);
+  height: 56px;
+  border-radius: 2px 40px 2px 2px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-service:hover {
+  background: #feea61;
+  border: 2px solid #feea61;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+
+/* icone do card services */
+.i-card-service {
+  border-right: 2px solid gray;
+  text-align: center;
+  font-size: 24px;
+  color: var(--green);
+}
+
+/*tag [nome] ao lado do icone card-service*/
+.tag-card-service {
+  margin-left: 19px;
+  font-weight: bold;
+  color: var(--green);
+}
+
+.c-anuncies {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    'box box-in aside'
+    'c-flex c-flex aside';
+  padding: 50px 0;
+}
+
+/*Section de notícias */
+.bg-news-realce {
+  background: var(--white);
+}
+
+/*box inicial - coluna left com 1 card*/
+.box {
+  grid-area: box;
+  overflow: hidden;
+  border: 2px solid var(--cinza-card);
+  border-radius: 5px;
+  background: var(--cinza-card);
+  height: 440px;
+}
+.box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Container internos que tem 3 imagens em grid */
+.box-in {
+  border: 2px solid var(--cinza-card);
+  grid-area: box-in;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 49.5% 49.5%;
+  overflow: hidden;
+  justify-content: space-between;
+  gap: 5px;
+  height: 440px;
+}
+
+/* Estendendo um carde em duas colunas*/
+.card-stand {
+  grid-column: 1/3;
+}
+
+/* Card superior do box-in */
+.box-in .card,
+.box-in .mini-card {
+  border: 2px solid gainsboro;
+  border-radius: 5px;
+  background: var(--cinza-card);
+}
+
+/*imagem principal do card do box-in*/
+.box-in .card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.box-in .mini-card {
+  width: 100%;
+  overflow: hidden;
+}
+/* image dos cards inferiores do box-in*/
+.box-in .mini-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+span.label-year {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 13px 5px 8px 25px;
+  display: block;
+  color: var(--green);
+}
+
+.title-box-one {
+  color: var(--green);
+  padding: 17px 0 0 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* texto limitado para usuário ver */
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  color: var(--green);
+  padding: 0 0 0 25px;
+  font-size: 14px;
+}
+
+.card-text-04 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  color: var(--green);
+  font-size: 13px;
+  line-height: 22px;
+  padding: 12px 0 0 25px;
+}
+
+/* Aside e seus elementos*/
+aside {
+  border: 2px solid var(--cinza-card);
+  grid-area: aside;
+  border-radius: 5px;
+  padding: 0 16px;
+}
+
+.c-aside-flex {
+  border-bottom: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+  padding-bottom: 1.5em;
+}
+
+.box-top-aside h4 {
+  font-size: 21px;
+  color: var(--green);
+  padding-top: 0.7rem;
+}
+.box-top-aside p {
+  padding: 2px 0 0 0;
+  font-size: 16px;
+}
+
+.icon-top-aside i {
+  font-size: 30px;
+}
+aside .card {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  padding: 16px;
+}
+aside .card:hover {
+  background: var(--cor-subBarAside);
+  transition: 0.5s;
+  cursor: pointer;
+  transform: scale(1.02);
+  color: white;
+}
+
+aside p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+aside h5 {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 3px;
+}
+
+/* Aplicar efeito nos textos ao passar o mouse no card */
+aside .card:hover p,
+aside .card:hover h5 {
+  color: white;
+}
+
+/* linha abaixo dos cards aside */
+span.subBarAside::after {
+  content: '';
+  width: 80%;
+  height: 1.6px;
+  display: block;
+  background-color: var(--cor-subBarAside);
+  margin: 0 auto 16px auto;
+}
+
+.c-flex {
+  grid-area: c-flex;
+  align-items: flex-end;
+}
+
+/* botao link mais informações */
+.btn-link {
+  white-space: nowrap;
+  border: 1px solid var(--green);
+  border-radius: 6px;
+  height: 30px;
+  padding: 6px 20px;
+  margin: 0 10px 0 0;
+  font-size: 14px;
+}
+
+/* linha ao lado do botao link */
+.line-btn-link {
+  display: block;
+  height: 1.3px;
+  background: var(--green);
+  width: 100%;
+}
+
+.c-helps {
+  background-color: #f3f8f5;
+  padding: 2rem;
+}
+
+.c-flex {
+  display: flex;
+}
+
+.c-flex .card-help {
+  border: 0.8px solid var(--green);
+  padding: 0.5rem;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: var(--green);
+}
+.c-helps h2 {
+  color: var(--green);
+  font-size: 36px;
+  padding: 10px 0 0 0;
+}
+
+.c-helps p {
+  padding: 0 0 10px 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* grid de tres colunas - formando botões */
+.grid-tri {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-tri .card {
+  background: white;
+  margin: 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 7px;
+}
+
+.grid-tri .card .fa-solid {
+  padding: 1rem;
+  color: var(--green);
+}
+
+.grid-tri .card .label-card {
+  color: var(--green);
+}
+
+.carousel {
+  background-color: brown;
+}
+
+.carousel img {
+  object-fit: cover;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  display: block;
+  position: sticky;
+}
+
+.grid-duo {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: beige;
+  height: 300px;
+}
+
+.c-cards-agende {
+  display: flex;
+
+  border: 4px solid orange;
+  padding: 3rem;
+}
+
+.card-agende {
+  border: 2px solid rosybrown;
+  width: 230px;
+  padding: 1rem 0;
+  border-radius: 3px;
+}
+
+.c-media-social {
+  padding: 2rem;
+  border: 4px solid brown;
+  display: flex;
+  gap: 2%;
+  height: 350px;
+}
+
+.media-social-instagram {
+  width: 30%;
+  border: 2px solid black;
+  margin: 0.5px;
+}
+
+.media-social-youtube {
+  width: 68%;
+  border: 2px solid black;
+  margin: 0.5px;
+}
+
+.time-real {
+  margin: 1rem;
+  border: 3px solid green;
+  height: 200px;
+  display: grid;
+}
+
+.c-lema {
+  display: flex;
+}
+.lema-see-more {
+  border: 2px green solid;
+  border-radius: 8px;
+  height: 30px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barinha-see-more::after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  display: block;
+  background: rgb(104, 170, 104);
+}
+
+footer {
+  display: grid;
+  height: 220px;
+  grid-template-rows: 80% 20%;
+  border: 3px solid saddlebrown;
+}
+
+.footer-top {
+  background: fuchsia;
+  padding: 2rem;
+}
+.footer-bottom {
+  background: green;
+  padding: 20px 2rem 0 20px;
+}
 
