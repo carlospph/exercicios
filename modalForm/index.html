@@ -1,1 +1,67 @@
+<div class="container">
 
+<div class="box" onclick="openModal('modal01')">
+ Lista de serviços
+</div>
+
+<div class="box" onclick="openModal('modal02')">
+  Cadastro de cliente
+</div>
+
+
+<!-- modal 01 lista de serviços-->
+<div class="window-modal" id="modal01">
+ 
+ <div class="modal">
+
+<div class="c-modal-header">
+    <h3 class="modal-header">Serviços disponíveis</h3>
+    <button class="btn-x" onclick="closeModal(modal01)">x</button>
+</div>
+   <div>
+    <ul class="marcador-services">
+      <li>MVP - web static</li>
+      <li>Treinamento básico Html e Css</li>
+      <li>Desenvolvimento frontEnd</li>
+      <li>Manutenção frontEnd</li>
+      <li>Suporte help desk</li> 
+    </ul>
+   </div>
+    <div class="modal-footer">
+    <button class="close-modal" onclick="closeModal(modal01)">Fechar</button>
+     
+    </div> <!--- box-header fim--->
+
+
+</div> <!--fim modal--->
+</div> <!--fim do window-->
+
+
+
+<div class="window-modal" id="modal02">
+ 
+ <div class="modal">
+
+<div class="c-modal-header">
+    <h3 class="modal-header">Cadastrar cliente</h3>
+    <button class="btn-x" onclick="closeModal('modal02')">x</button>
+</div>
+    <form>
+      <label>
+      <input type="text" placeholder="Nome completo" class="group-input"> </label>
+         <label><input type="email" placeholder="Seu e-mail" class="group-input">  </label>
+        <label> <input type="password" placeholder="Sua senha" class="group-input">  </label>
+        <label> <input type="password" placeholder="Confirme sua senha" class="group-input">  </label>
+    </form>
+  
+    <div class="modal-footer">
+    <button class="close-modal" onclick="closeModal('modal02')">Fechar</button>
+     
+    </div> <!--- box-header fim--->
+
+
+</div> <!--fim modal--->
+</div> <!--fim do window--->
+
+
+</div>
