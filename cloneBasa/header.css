@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: green;
+    color: white;
+    padding: .5rem;
+    border:3px solid red;
+    position: fixed;
+    width: 100%;
+}
+.container-max{
+    margin: 0 auto; 
+}
+.container-flex-duo{
+    display: flex;
+    justify-content: space-between;
+}
+.container-perfil-menu{
+    display: flex;
+    align-items: center;
+ }
+.flex-perfil{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .4rem;
+}
+
+/* ===========================================TELA ACIMA DE 320px ======================*/
+@media(min-width: 520px){
+    .container-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    #menu-mobile{
+        display: none;
+    }
+
+}

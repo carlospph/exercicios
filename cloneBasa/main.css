@@ -1,0 +1,27 @@
+main{
+    color: rgba(16,16,96);
+ }
+
+.container-cards{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: .5rem;
+    grid-area: container-cards;
+    border:2px solid red;
+    padding-top: 70px;
+}
+ 
+
+@media(min-width: 569px){
+    .container-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /*grid principal com [nav e o cantainer-cards]*/
+    .container-grid-main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 'nav container-cards';
+ } 
+
+}
