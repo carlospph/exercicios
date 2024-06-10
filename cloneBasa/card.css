@@ -2,27 +2,33 @@
 .card{
     background: rgb(231, 241, 231);
     /**border:1px solid blue;**/
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 5px 0 10px 0;
-    margin-top: .4rem;
+    margin-top: .2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 110px;
+    height: 90px;
 }
 
-
+.card:hover{
+    background: rgb(238, 210, 144);
+    cursor: pointer;
+}
 .card h4{
     font-weight: normal;
     font-size: 13px;
     padding-top: 10px;
 }
 
-
+ 
+.pt-60{
+    padding-top: 60px;
+}
 @media(min-width: 569px){
     
     .card{
         width: 160px;
-        margin-inline: .4rem;
+        margin-inline: .1rem;
     }
 }

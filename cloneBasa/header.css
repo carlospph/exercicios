@@ -6,19 +6,27 @@
 }
 
 header{
-    background-color: green;
+    background-color: #09542c;
     color: white;
     padding: .5rem;
-    border:3px solid red;
-    position: fixed;
     width: 100%;
+    position: fixed; 
+ }
+
+#logo img{
+    width: 200px;
+}
+header h1{
+    font-size: 20px;
 }
 .container-max{
     margin: 0 auto; 
 }
 .container-flex-duo{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 .container-perfil-menu{
     display: flex;
@@ -30,15 +38,24 @@ header{
     justify-content: space-between;
     gap: .4rem;
 }
+ #menu-mobile{
+    display: block;
+ }
 
-/* ===========================================TELA ACIMA DE 320px ======================*/
-@media(min-width: 520px){
+ p.tag-bpm{
+    font-size: 13px;
+    padding: 0 10px 0 0;
+    margin: 0 .6rem 0 0;
+    border-right: 1px solid white;
+ }
+/* ===========================================TELA ACIMA 540px ======================*/
+@media(min-width: 569px){
     .container-header{
         display: flex;
         justify-content: space-between;
     }
+
     #menu-mobile{
         display: none;
-    }
-
+     }
 }
