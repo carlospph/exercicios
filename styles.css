@@ -10,8 +10,14 @@
 
 header{
     background: violet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
+.box{
+    padding: .5rem;
+    background:rgb(138, 148, 240);
+}
 section{
     background: rgb(138, 148, 240);
 }
