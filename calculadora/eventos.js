@@ -1,25 +1,40 @@
+let resultado = document.querySelector('#resultado')
 
-// mapeando o campo que mstra os valores
-const display = document.getElementById('display');
-
-// função para limpar campos
-function clearDisplay() {
-    display.value = '';
+function limpar(){
+    resultado.innerHTML = '0'
 }
 
+function insert(num){
 
-function deleteLast() {
-    display.value = display.value.slice(0, -1);
-}
+    if(resultado.innerHTML==='0' || resultado.innerHTML === '00'){
+        resultado.innerHTML = num
+    }
 
-function appendToDisplay(value) {
-    display.value += value;
-}
-
-function calculateResult() {
-    try {
-        display.value = eval(display.value);
-    } catch (error) {
-        display.value = 'Erro';
+    else{
+        resultado.innerHTML += num
     }
 }
+
+function aviso(){
+    document.querySelector('.msg-erro').style.display = 'flex';
+}
+
+function calcular(){
+    try{
+        let total = eval(resultado.innerHTML);
+        resultado.innerHTML = total
+    }catch(Error){
+       
+       aviso()
+
+        limpar()
+    }
+}
+
+ 
+
+function closeAviso(){
+    let close = document.querySelector('.msg-erro');
+    close.style.display = 'none';
+}
+
