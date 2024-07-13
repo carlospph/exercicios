@@ -1,0 +1,394 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+  }
+  
+  :root {
+    --blue: rgba(15, 15, 96);
+    --white: #fff;
+    --roxo: blueviolet;
+  }
+  body {
+    background: #f2f2f2;
+  }
+  /* header da página */
+  .container-max {
+    max-width: 992px;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  
+  /* todas as imagens padrões */
+  img {
+    width: 400px;
+  }
+  
+  /* cor do cabeçalho - header */
+  .bg-header {
+    background-color: rgba(15, 15, 96);
+    color: #fff;
+    padding: 0.8rem 0;
+  }
+  
+  /* imagem dos icones em svg */
+  svg {
+    fill: #fff;
+    width: 20px;
+  }
+  
+  /* div container header - cabeçalho */
+  .div-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* link preços no div-header */
+  .link-precos {
+    border: 1px solid #ffffff80;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  
+  /* ---------- ---------------- ----------- section hero ------ -------- --------- */
+  
+  section.hero {
+    min-height: 400px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--blue);
+  }
+  
+  .author {font-size: 16px;
+  }
+  
+  .perfile {
+    font-size: 40px;
+    padding: 0.4rem 0;
+  }
+  
+  .lema {
+    padding: 0 0 1rem 0;
+  }
+  
+  a.d-block-inline {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 6px;
+  }
+  /* ---------- ---------------- ----------- section about ------ -------- --------- */
+  
+  .d-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* border: 2px solid red; */
+    min-height: 400px;
+  }
+  
+  .d-grid .textual {
+    width: 50%;
+    /* border: 3px solid orange; */
+    font-size: 16px;
+    line-height: 28px;
+  }
+  
+  .d-grid .textual h2 {
+    padding: 0 0 0.6rem 0;
+  }
+  
+  .d-grid .textual p {
+    padding-bottom: 1rem;
+  }
+  
+  .d-grid .image {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    /* border: 3px solid orange; */
+  }
+  
+  .d-grid .image img {
+    width: 90%;
+    display: block;
+    text-align: right;
+    border-radius: 50%;
+  }
+  
+  /* ------ ---------- ------------- -------- -- section especialidade------ ------ - */
+  
+  .grid-especialidade {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 50px 0;
+  }
+  
+  .grid-especialidade div {
+    /* border: 2px solid red; */
+    height: auto;
+    overflow: hidden;
+  }
+  
+  h3.title-card {
+    padding: 0.5rem 0;
+  }
+  
+  svg.icone-profissional {
+    background: rgba(15, 15, 96);
+    padding: 9px;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* ------ ---------- ------------- section ultimos projetos / last-projects ------ ------ - */
+  .last-projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .title-last {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    grid-column: span 2;
+    padding-bottom: 1rem;
+  }
+  
+  .title-last:after {
+    content: "";
+    height: 8px;
+    width: 70px;
+    display: block;
+    background: orange;
+    border-radius: 4px;
+  }
+  
+  .card-last {
+    max-width: 100%;
+  }
+  
+  .card-last img {
+    width: 100%;
+  }
+  
+  .title-last-card {
+    padding: 10px 0;
+  }
+  
+  .text-last-card {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+  /* link da ancora */
+  .icone-link {
+    fill: blueviolet;
+    width: 15px;
+    margin-top: 5px;
+  }
+  
+  /* texto redicencia */
+  .truncated-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Número de linhas que você quer exibir */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .link-card-btn {
+    text-decoration: none;
+    color: blueviolet;
+  }
+  
+  .link-card-btn:hover {
+    color: rgb(0, 21, 255);
+  }
+  
+  /* ------------ ---------- ----- objected ---------- ------- --- -------- ---- */
+  #whats {
+    min-height: 450px;
+    /* border: 3px solid red; */
+  }
+  .objected {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .title-objected {
+    font-size: 36px;
+    padding-bottom: 1rem;
+  }
+  
+  .text-objected {
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .grid-tri {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 1rem;
+    padding-bottom: 90px;
+    gap: 1rem;
+  }
+  .icone-whats {
+    fill: blueviolet;
+    padding: 1rem 0 0.5rem 0;
+  }
+  
+  .bg-white {
+    background: #fff;
+  }
+  
+  /* ------------ ---------- ----- price ---------- ------- --- -------- ---- */
+  
+  .grid-precos {
+    padding: 5rem 1rem 6rem 1rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    color: rgba(16, 16, 96);
+  }
+
+  
+  .tag-apartir {
+    grid-column: span 2;
+    padding: 1rem 0;
+    font-size: 17px;
+  }
+  
+  .tag-value {
+    padding: 1rem 0;
+    font-size: 33px;
+    font-weight: bold;
+    padding: 0 0 0.5rem 0;
+    margin: 0;
+  }
+  
+  .marcadores-orcamento {
+    padding-left: 1rem;
+  }
+  
+  .marcadores-orcamento li {
+    list-style: circle;
+    padding: 0.2rem;
+  }
+  
+  .w-inputs label {
+    padding: 0.2rem 0;
+    display: block;
+  }
+  
+  .w-inputs .field {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    padding: 0 0.5rem;
+    font-size: 17px;
+  }
+  
+  .w-inputs textarea {
+    outline: none;
+    display: block;
+    width: 100%;
+    max-height: 170px;
+    min-height: 170px;
+    padding: 0.5rem;
+    font-size: 18px;
+  }
+  
+  .btn-default {
+    border: 0;
+    padding: 0.4rem 1.8rem;
+    margin-top: 5px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  
+  .bg-violet {
+    background: blueviolet;
+  }
+  
+  .bg-orange {
+    background: orange;
+  }
+  
+  /* ------------ ---------- ----- newsletter ---------- ------- --- -------- ---- */
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: var(--roxo);
+    color: var(--white);
+    text-align: center;
+  }
+
+
+  /* container do input e botão newsletter */
+  .container-input-newsletter {
+    border: 0;
+    background: #fff;
+    display: flex;
+    padding: 0 0 0 .5rem;
+    height: 35px;
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+
+
+  /* campo do email */
+  .container-input-newsletter input{
+    border: 0;
+    outline: none;
+    font-size: 18px;
+  }
+
+
+  /* botão submit */
+  .container-input-newsletter input[type='submit']{
+    padding: 0 .5rem;
+    background-color: aquamarine;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+
+
+
+  /* radope preto */
+  footer {
+    background: black;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}

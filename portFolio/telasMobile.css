@@ -1,0 +1,103 @@
+
+  /* ---- ----- ----- ----- telas mobile até 600px - -  */
+  @media screen and (max-width: 600px) {
+
+    .container-max{
+      max-width: 400px;
+      margin: 0 auto;
+      position: relative;
+    }
+  
+    
+    section.hero{
+      min-height: 200px;
+      padding-top: 100px;
+    }
+  
+    .grid-especialidade {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  
+    .grid-especialidade div {
+      border: 2px solid rgba(139, 130, 130, 0.4);
+      border-radius: 4px;
+      height: auto;
+      padding: 0.6rem;
+    }   
+  
+    
+    .d-grid{
+      /* border: 3px solid red; */ 
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+  
+    .d-grid .textual{
+      padding: 2em 0 0 0;
+      width: 100%;
+    }
+  
+    .d-grid .textual p{
+      text-align: justify;
+    }
+  
+    .d-grid .image {
+      display: flex;
+      justify-content: end;
+      width: 100%; 
+     }
+  
+    
+    /* imagem do perfil escondida */
+    .d-grid .image img {
+       display: none;
+    }
+  
+  
+    .last-projects-grid{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding-top: 0rem;
+    }
+  
+  
+    .grid-tri{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .grid-tri .card{
+      border: 1px solid var(--roxo);
+      border-radius: 3px;
+      padding: 1.5rem;
+    }
+  
+    .grid-precos{
+      display: flex;
+      flex-direction: column;
+      /* border:1px solid red; */
+      padding: 1rem;
+    }
+
+    
+
+    .container-input-newsletter{
+        width: 100%;
+        border: 2px solid red;
+        overflow: hidden;
+        margin: 0 auto;
+    } 
+
+    .container-input-newsletter input{
+        width: 100%;
+    }
+
+    .icone-search{
+        fill: blue;
+    }
+  }
+    
