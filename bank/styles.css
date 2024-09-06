@@ -1,0 +1,51 @@
+body {
+}
+
+/*     cor personalizada da navbar */
+.bg-navbar {
+  background-color: green;
+}
+
+/* padding-top personalizado */
+.pt-50 {
+  padding-top: 80px;
+}
+
+/* dropdown personalizado */
+ul.dropdown-menu.dropdown-menu-end.show {
+  background: green;
+  margin: 0rem 0 0 0;
+}
+
+#item {
+  min-height: 400px;
+}
+
+a.nav-link.dropdown-toggle,
+a.nav-link {
+  font-size: 12.3px;
+  font-weight: bold;
+}
+
+/* section hero - destaque */
+
+#hero {
+  max-height: 295px;
+  border: 5px solid red;
+  overflow: hidden;
+}
+
+.carousel-person img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bg-cinza {
+  background: rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 769px) {
+  .btn-login {
+    margin: 0.5rem 0 0 0;
+  }
+}
