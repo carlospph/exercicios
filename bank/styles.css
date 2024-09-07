@@ -44,8 +44,8 @@ a.nav-link {
 .bg-section-bar {
   background: linear-gradient(
     68deg,
-    rgba(110, 119, 116, 0.5) 24%,
-    rgba(174, 188, 191, 0.6) 24%
+    rgba(172, 196, 188, 0.425) 24%,
+    rgba(227, 237, 240, 0.6) 24%
   );
 }
 
