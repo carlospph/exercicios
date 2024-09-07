@@ -1,6 +1,4 @@
-body {
-}
-
+ 
 /*     cor personalizada da navbar */
 .bg-navbar {
   background-color: green;
@@ -44,7 +42,66 @@ a.nav-link {
 .bg-cinza {
   background: rgba(0, 0, 0, 0.3);
 }
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  border: 2px solid red;
+}
+
+.row-d-grid {
+  display: grid;
+  grid-template-columns: 25% auto 20%;
+  background: #c9c9c9;
+  align-items: center;
+}
+
+.div-diagonal {
+  background-color: #b0adad;
+  clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-navbar-meio {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 0 0 1rem;
+}
+
+.mini-navbar-date {
+  text-align: right;
+  padding: 0 2rem 0 0;
+}
+
 @media screen and (max-width: 769px) {
+  .row-d-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .div-diagonal {
+    clip-path: none;
+    width: 100%;
+  }
+
+  .mini-navbar-meio {
+    padding: 1rem 0.5rem;
+  }
+
+  .mini-navbar-date {
+    display: none;
+  }
+
   .btn-login {
     margin: 0.5rem 0 0 0;
   }
