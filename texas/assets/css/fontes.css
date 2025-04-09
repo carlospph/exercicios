@@ -1,0 +1,26 @@
+fontes.css
+:root {
+
+    --cor-light: #fff;
+    --cor-second: #807373;
+    --cor-second-ii: #f2f2f2;
+
+    --font-12: 12px;
+    --font-13: 13px;
+    --font-14: 14px;
+    --font-15: 15px;
+    --font-16: 16px;
+    --font-17: 17px;
+    --font-18: 18px;
+    --font-19: 19px;
+    --font-20: 20px;
+    --font-21: 21px;
+    --font-22: 33px;
+    --font-35: 35px;
+
+    --padding-5: .5rem;
+    --padding-10: 1rem;
+    --padding-15: 1.5rem;
+    --padding-20: 2rem;
+    --padding-30: 3rem;
+}

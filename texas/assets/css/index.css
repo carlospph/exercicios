@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Importar outros CSS */
+@import url(fontes.css);
+@import url(call.css);
+@import url(cardapio.css);
+@import url(barraDePromotion.css);
+@import url(newsletter.css);
+@import url(footer.css);
+
+/* Resetando elementos */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+ 
+
+/* Header */
+header {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+/* icones do cabeçalhoo  - MOBILE*/
+header i {
+  color: var(--cor-light);
+  cursor: pointer;
+  font-size: var(--font-35);
+  padding: var(--padding-10) 0;
+}
+
+/* Limitando tamanho do conteúdo */
+.wrapper {
+  margin: 0 auto;
+  max-width: 1260px;
+  padding: 0 15px;
+}
+
+/* Barra de navegação */
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo marca */
+.brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+/* Menu principal */
+.menu {
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 100vh;
+  width: 100%;
+  transition: .5s;
+}
+
+
+/* Alternar em exibir ou ocultar menu  */
+.show {
+  left: -100%;
+  transition: .5s;
+}
+
+/* Links default */
+.nav-link {
+  color: white;
+  display: block;
+  font-size: var(--font-18);
+  padding: .5em 1rem;
+}
+
+/* ao passar o mouse sobre o link  */
+.nav-link:hover {
+  color: orange;
+  transition: .5s;
+}
+
+
+/* Container texts */
+#hero {
+   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 45%, rgb(75, 72, 72) 100%);
+}
+
+/* container hero - mobile  */
+.hero__container{
+  background-image: url("https://github.com/carlospph/texas-burguer/blob/main/foto-removebg-preview.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 9rem 20px 4em;
+  max-width: 1224px;
+  margin: 0 auto;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+}
+
+.hero__container--links{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.hero__title{
+ font-size: 35px;
+}
+
+
+/* titulos padrões  */
+.title__section{
+  font-size: 45px;
+  line-height: 110%;
+  margin-top: 40px;
+}
+
+/* tracinho abaixo do titulo parão  */
+.title__section::after{
+  content: "";
+  width: 80px;
+  height: 4px;
+  display: block;
+  background-color: black;
+  margin: 30px 0;
+}
+
+.title__section:nth-of-type(2)::after {
+  display: none;
+}
+
+/* cada links em formato de botão da hero  */
+.hero__link {
+  border-radius: 5px;
+  background: #e4bc32;
+  padding: 1rem;
+  min-width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+ 
+
+
+/* ---- - --------  --- Telas maiores | acima de 769px ----- ---- ------- - --------- */
+@media screen and (min-width: 769px) {
+
+  /* navegação  */
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header i.fa-bars {
+    display: none;
+  }
+
+  /* menu dentro da navegação  */
+  .menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+  /* Container hero inicial - computador */
+  
+/* Container texts */
+#hero {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 45%, rgb(75, 72, 72) 100%);
+}
+
+.hero__container{
+  background-image: url("https://github.com/carlospph/texas-burguer/blob/main/foto-removebg-preview.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80%;
+  padding: 2rem;
+  height: 500px;
+  max-width: 1224px;
+  margin: 0 auto;
+  display: flex;
+  text-align: left;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* hero container texto  */
+.hero__container--text {
+  color: white;
+   margin: 5px 5px 4rem 5px;
+  padding: 1rem;
+  max-width: 460px;
+}
+
+/* titulo principal da página  */
+.hero__title {
+  font-size: 2.7rem;
+  line-height: 110%;
+}
+
+/* texto default padrão */
+.hero__text{
+  /* border: 3px solid red; */
+  font-size: 19px;
+  margin-bottom: 2rem;
+}
+
+/* container dos links da hero  */
+.hero__container--links {
+  margin: 2rem 0 3rem;
+  display: flex;
+  gap: 20px;
+}
+
+/* cada links em formato de botão da hero  */
+.hero__link {
+  border-radius: 5px;
+  background: #e4bc32;
+  padding: 1rem;
+  min-width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  color: white;
+}
+
+.hero__link:hover{
+  opacity: .8;
+}
+
+.hero__link--small{
+  max-width: 200px;
+}
+
+
+
+
+
+
+/* SERVICES  */
+
+}

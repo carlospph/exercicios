@@ -1,0 +1,78 @@
+:root{
+    --cor-sum: rgb(255,188,13);
+}
+
+#services{
+    background-color: var(--cor-sum);
+    padding: 30px 10px;
+}
+
+
+.services__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* cartões dos serviços  */
+.services__card{
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.795);
+    margin: 1rem;
+    padding: 20px;
+}
+
+/* titulos dos serviços  */
+.services__title{
+    font-size: var(--font-22);
+}
+
+/* icones dos cards  */
+.services__card i.fa-brands, .services__card i.fa-solid{
+    font-size: 3rem;
+}
+
+/* titulos dos cards  */
+.services__card h4{
+    font-size: var(--font-22);
+    font-weight: 100;
+}
+
+.services__card p{
+    font-size: 17px;
+}
+
+/* titulo center  */
+.title-center{
+    text-align: center;
+}
+
+/* lema  */
+.lema{
+    font-size: var(--font-18);
+    color: var(cor-light);
+}
+
+/* mini flex para todos  */
+.d-flex{
+     display: flex;
+    gap: 4px;
+}
+
+
+
+@media screen and (min-width: 769px){
+    .services__container--cards{
+         display: grid;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: center;
+    }
+
+    .services__card h4{
+        line-height: 100%;
+    }
+
+    .services__card p{
+        line-height: 150%;
+    }
+}
