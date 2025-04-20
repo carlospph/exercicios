@@ -1,0 +1,40 @@
+ .d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secao__titulo{
+    padding: 2rem 0 1rem 0;
+ }
+
+ .secao-vertical{
+     display: grid;
+    grid-template-columns: 1fr;
+ }
+
+.secao-vertical .secao__cartoes{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
+    /* criando um slide simples rs  */
+    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: none;
+    margin-bottom: 1rem;
+}
+
+.secao-vertical .cartao{
+    text-align: center;
+
+    @media (max-width: 1024px){
+         text-align: left;
+        padding: 4px;
+        background-color: #2b3c53;
+    }
+}
+
+.secao__link{
+     display: block;
+}

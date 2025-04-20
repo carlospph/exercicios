@@ -1,0 +1,56 @@
+.secao-horizontal .secao__cartoes {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 20px;
+
+    @media (max-width:358px){
+        grid-template-columns: 100%;
+    }
+
+     
+    @media (min-width:359px) and (max-width: 621px) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        padding: 0;
+    }
+}
+
+.secao-horizontal .cartao {
+    display: grid;
+    align-items: center;
+    column-gap: 10px;
+    grid-template-areas:
+        ". . . "
+        "cartao__imagem cartao__titulo cartao__botao"
+        "cartao__imagem cartao__player cartao__botao";
+
+}
+
+.secao-horizontal .cartao .cartao__imagem {
+    grid-area: cartao__imagem;
+}
+
+.secao-horizontal .cartao .cartao__titulo {
+    grid-area: cartao__titulo;
+
+    @media(max-width: 1024px) {
+        grid-row: 1/5;
+    }
+}
+
+.secao-horizontal .cartao .cartao__player {
+    grid-area: cartao__player;
+    width: 100px;
+
+}
+
+.secao-horizontal .cartao .cartao__botao {
+    grid-area: cartao__botao;
+}
+
+@media (max-width:769px) {
+    main {
+        margin-bottom: 6rem;
+    }
+}

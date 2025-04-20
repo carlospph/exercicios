@@ -1,0 +1,23 @@
+@media (max-width: 1024px){
+.navbar__items{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+}
+
+.navbar__items form{
+     text-align: center;
+     display: flex;
+    justify-content: center;
+}
+    
+    .navbar__items button{
+         display: grid;
+        justify-content: center;
+    }
+    
+    .navbar__items img{
+        margin: .5rem auto;
+    }
+    
+}

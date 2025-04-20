@@ -1,0 +1,40 @@
+@import url(main.css);
+@import url(secao-vertical.css);
+@import url(navbar.css);
+@import url(card-flex.css);
+
+body{
+    display: grid;
+    grid-template-areas: 
+        "menu-lateral cabecalho"
+        "menu-lateral principal";
+    grid-template-columns: 20% 80%;   
+    
+    @media (max-width:1023px){
+        grid-template-columns:0 100%;
+    }
+  }
+
+.cabecalho{
+      grid-area: cabecalho;
+ }
+
+.menu-lateral{ 
+      grid-area: menu-lateral;
+ }
+
+.principal{
+      grid-area: principal;
+ }
+
+
+.menu-lateral ul{
+    margin: 1rem 0;
+    padding: 0;
+}
+ 
+
+
+
+
+

@@ -1,0 +1,14 @@
+li.cartao{
+     margin: 0 0 1rem 0;
+}
+
+.cartao a{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cartao .cartao__subtitulo{
+    margin-top: auto;
+    padding: 10px 0;
+}
