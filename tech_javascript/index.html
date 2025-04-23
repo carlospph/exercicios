@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>JavaScript::CN</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+            <input type="text" placeholder="Pesquisar por título" id="search">
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <section class="tarefas">
+                <div class="tarefas__header">
+                    <h2>Tarefas</h2>
+                    <button class="btn-default" onclick="criarTarefa()">
+                        nova tarefa
+                    </button>
+                </div>
+
+                <div class="resultado-pesquisa">
+                    
+                    <div class="cada-tarefa">
+                        <h5>
+                            tarefa 1
+                        </h5>
+                        <p>tarefa inicial para testea o desenvolvimento js, css, html, mas nõa nesta ordem</p>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+
+                    <div class="cada-tarefa">
+                        <h5>
+                            tarefa 2
+                        </h5>
+                        <p>tarefa inicial para testea o desenvolvimento js, css, html, mas nõa nesta ordem</p>
+                    </div>
+
+                    <div class="cada-tarefa">
+                        <h5>
+                            tarefa 3
+                        </h5>
+                        <p>tarefa inicial para testea o desenvolvimento js, css, html, mas nõa nesta ordem</p>
+                    </div>
+
+                    <div class="cada-tarefa">
+                        <h5>
+                            tarefa 4
+                        </h5>
+                        <p>tarefa inicial para testea o desenvolvimento js, css, html, mas nõa nesta ordem</p>
+                    </div>
+
+                    <div class="cada-tarefa">
+                        <h5>
+                            tarefa 1
+                        </h5>
+                        <p>tarefa inicial para testea o desenvolvimento js, css, html, mas nõa nesta ordem</p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <div id="overlay"  onclick="fecharModal()"></div>
+    <div class="modal" id="modalNovaTarefa">
+        <form action="">
+            <div class="d-flex">
+            <h3 class="title-modal-form">Criar tarefa</h3>
+            <span class="btn-close-modal" onclick="fecharModal()">X</span>
+        </div>
+            <div class="group-form">
+                <input type="text" id="nova-tarefa" placeholder="Nova tarefa">
+            </div>
+            <div class="group-form">
+                <textarea name="" id="descricao-nova-tarefa" placeholder="Descreva sua tarefa"></textarea>
+            </div>
+
+            <div class="group-form">
+                <button class="btn-default">
+                    nova tarefa
+                </button>
+            </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="assets/js/modal.js"></script>
+</body>
+
+</html>
