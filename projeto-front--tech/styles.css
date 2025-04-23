@@ -1,0 +1,45 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ 
+:root{
+    --cor-default: #C92071;
+    --cor-light: white;
+
+    --font-36:2.2rem;
+}
+
+html, body{
+    font-family: "Inter", sans-serif;
+}
+
+.logo{
+    background-color: var(--cor-default);
+    color: var(--cor-light);
+    font-size: 2rem;
+    padding: .7rem;
+}
+span.brand-custom{
+    color: var(--cor-default);
+    font-weight: 700;
+    font-size: var(--font-36);
+}
+
+a.color-dark{
+    color: rgb(46, 6, 6);
+}
+
+.btn-default{
+    background-color: var(--cor-default);
+    color: var(--cor-light);
+    padding: 5px 30px 7px 30px;
+}
+
+.btn-default:hover{
+    background-color: var(--cor-default);
+    color: var(--cor-light);
+    opacity: .8;
+}
+
+.bg-cor-default{
+    background-color: var(--cor-default);
+    color: var(--cor-light);
+}
